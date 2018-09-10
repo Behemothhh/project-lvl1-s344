@@ -1,0 +1,5 @@
+---
+extends: airbnb-base/legacy
+parser: babel-eslint
+rules:
+  no-console: 0
