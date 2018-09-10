@@ -1,12 +1,12 @@
 {
   "name": "elakov-brain-games",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "README",
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
-  "filse": [
+  "files": [
     "dist"
   ],
   "scripts": {
