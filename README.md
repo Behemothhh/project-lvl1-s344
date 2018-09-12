@@ -3,3 +3,4 @@
 [![Build Status](https://travis-ci.com/Behemothhh/project-lvl1-s344.svg?branch=master)](https://travis-ci.com/Behemothhh/project-lvl1-s344)
 [![asciicast](https://asciinema.org/a/fccProPWZ2ImhsQIdsCbaoCRe.png)](https://asciinema.org/a/fccProPWZ2ImhsQIdsCbaoCRe)
 [![asciicast](https://asciinema.org/a/UafdlvClDlmzvlHAklLeEoYht.png)](https://asciinema.org/a/UafdlvClDlmzvlHAklLeEoYht)
+[![asciicast](https://asciinema.org/a/en5dURvAcQR4ga3zao9lCwh28.png)](https://asciinema.org/a/en5dURvAcQR4ga3zao9lCwh28)
