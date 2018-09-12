@@ -1,19 +1,22 @@
-import Game from './index';
+import createGame from '../index';
 
-const brainGCD = new Game({
+const brainGCD = createGame({
   description: 'Find the greatest common divisor of given numbers',
   logic: () => {
     const MAX_NUM = 100;
     const firstNum = Math.ceil(Math.random() * MAX_NUM);
     const secondNum = Math.ceil(Math.random() * MAX_NUM);
-    let minNumber = Math.min(firstNum, secondNum);
-    while (firstNum % minNumber !== 0 || secondNum % minNumber !== 0) {
-      minNumber -= 1;
-    }
+    const findGCD = (first, second) => {
+      if (second > 0) {
+        return findGCD(second, first % second);
+      }
+
+      return first;
+    };
 
     return {
       question: `${firstNum} ${secondNum}`,
-      answer: minNumber
+      answer: findGCD(firstNum, secondNum)
     };
   }
 });

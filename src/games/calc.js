@@ -1,6 +1,6 @@
-import Game from './index';
+import createGame from '../index';
 
-const brainCalc = new Game({
+const brainCalc = createGame({
   description: 'What is the result of the expression?',
   logic: () => {
     const MAX_NUM = 100;

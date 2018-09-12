@@ -1,6 +1,6 @@
-import Game from './index';
+import createGame from '../index';
 
-const brainEven = new Game({
+const brainEven = createGame({
   description: 'Answer "yes" if number even otherwise answer "no".',
   logic: () => {
     const MAX_NUM = 1000;
