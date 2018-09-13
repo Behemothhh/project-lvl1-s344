@@ -7,10 +7,10 @@ const brainCalc = createGame({
     const actions = ['*', '+', '-'];
     const firstNum = Math.round(Math.random() * MAX_NUM);
     const secondNum = Math.round(Math.random() * MAX_NUM);
-    const choosedActionIndex = Math.floor(Math.random() * actions.length);
-    const choosedAction = actions[choosedActionIndex];
+    const chosenActionIndex = Math.floor(Math.random() * actions.length);
+    const chosenAction = actions[chosenActionIndex];
     let answer;
-    switch (choosedAction) {
+    switch (chosenAction) {
       case '*':
         answer = firstNum * secondNum;
         break;
@@ -24,7 +24,7 @@ const brainCalc = createGame({
     }
 
     return {
-      question: `${firstNum} ${choosedAction} ${secondNum}`,
+      question: `${firstNum} ${chosenAction} ${secondNum}`,
       answer
     };
   }
