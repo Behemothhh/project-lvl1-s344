@@ -5,20 +5,27 @@ const brainPrime = createGame({
   logic: () => {
     const MAX_NUM = 200;
     const randomNumber = Math.ceil(Math.random() * MAX_NUM);
-    const checkIsDivisor = (num) => {
-      if (num > randomNumber / 2) {
+    const isPrime = num => {
+      if (num <= 1) {
         return false;
       }
-      if (randomNumber % num === 0) {
-        return true;
-      }
+      const checkIsDivisor = divisor => {
+        if (divisor > num / 2) {
+          return false;
+        }
+        if (num % divisor === 0) {
+          return true;
+        }
 
-      return checkIsDivisor(num + 1);
+        return checkIsDivisor(divisor + 1);
+      };
+
+      return !checkIsDivisor(2);
     };
 
     return {
       question: randomNumber,
-      answer: !checkIsDivisor(2) && randomNumber > 1 ? 'yes' : 'no'
+      answer: isPrime(randomNumber) ? 'yes' : 'no'
     };
   }
 });
