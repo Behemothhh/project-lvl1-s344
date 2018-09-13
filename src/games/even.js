@@ -1,4 +1,4 @@
-import createGame from '../index';
+import createGame from '..';
 
 const brainEven = createGame({
   description: 'Answer "yes" if number even otherwise answer "no".',

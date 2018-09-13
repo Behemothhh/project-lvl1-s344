@@ -1,4 +1,4 @@
-import createGame from '../index';
+import createGame from '..';
 
 const brainGCD = createGame({
   description: 'Find the greatest common divisor of given numbers',

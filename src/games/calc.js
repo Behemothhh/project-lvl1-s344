@@ -1,4 +1,4 @@
-import createGame from '../index';
+import createGame from '..';
 
 const brainCalc = createGame({
   description: 'What is the result of the expression?',
